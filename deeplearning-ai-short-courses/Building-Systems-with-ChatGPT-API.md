@@ -1,4 +1,28 @@
 # [Building Systems with the ChatGPT API](https://learn.deeplearning.ai/courses/chatgpt-building-system/lesson/1/introduction)
+
+- [Building Systems with the ChatGPT API](#building-systems-with-the-chatgpt-api)
+  - [Large Language Models, the ChatFormat and Tokens](#large-language-models-the-chatformat-and-tokens)
+    - [LLM](#llm)
+  - [Tokens](#tokens)
+  - [Questioning Paradigm](#questioning-paradigm)
+  - [Classification](#classification)
+  - [Moderation](#moderation)
+    - [Moderation](#moderation-1)
+    - [Prompt Injection](#prompt-injection)
+      - [Using Delimiters](#using-delimiters)
+      - [Supervised Classification](#supervised-classification)
+  - [Chain of Thought Reasoning](#chain-of-thought-reasoning)
+    - [Chain of Thought Design](#chain-of-thought-design)
+    - [Inner Monologue](#inner-monologue)
+  - [Chaining Prompts](#chaining-prompts)
+    - [Chain of Prompts](#chain-of-prompts)
+    - [Dynamic Information Provision Strategy](#dynamic-information-provision-strategy)
+    - [Practical Example](#practical-example)
+  - [Check Outputs](#check-outputs)
+    - [Checking for Harmful Content](#checking-for-harmful-content)
+    - [Quality Check via Model Feedback](#quality-check-via-model-feedback)
+  - [Evaluation](#evaluation)
+
  
 ## Large Language Models, the ChatFormat and Tokens
 
