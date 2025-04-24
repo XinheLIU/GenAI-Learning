@@ -23,7 +23,6 @@
     - [Quality Check via Model Feedback](#quality-check-via-model-feedback)
   - [Evaluation](#evaluation)
 
- 
 ## Large Language Models, the ChatFormat and Tokens
 
 ### LLM
@@ -98,7 +97,7 @@ print(response)
 
 ## Questioning Paradigm
 
-![Open AI API Roles](System-User-Assistant.png)
+<img src="System-User-Assistant.png" alt="Open AI API Roles" style="width:50%;"/>
 
 - Specialized "questioning format" helps leverage the model's ability to understand and answer questions.
   - System messages are statements sent to the model.
@@ -114,7 +113,7 @@ print(response)
   - Enables quicker and more efficient building and deployment of applications.
   - Recognize the limitations to better leverage the technology.
 
-```py 
+```py
 
 def get_completion_from_messages(messages, 
                                  model="gpt-3.5-turbo", 
@@ -278,6 +277,7 @@ response = get_completion_from_messages(messages)
 print(response)
 
 ```
+
 ## Moderation
 
 ### Moderation
@@ -417,10 +417,11 @@ print(response)
 
 ### Chain of Thought Design
 
-- Chain of Thought (CoT) prompting guides language models to perform step-by-step reasoning.
-  - Set up system messages requiring the model to state each reasoning step before the final conclusion.
-  - Example: Ask the model to state its initial understanding, list aspects to consider, analyze factors one by one, and provide arguments for and against before concluding.
-  - Benefits: Reduces instances of rushing to incorrect conclusions and provides more reliable and well-reasoned outputs.
+Chain of Thought (CoT) prompting guides language models to perform step-by-step reasoning.
+
+- Set up system messages requiring the model to state each reasoning step before the final conclusion.
+- Example: Ask the model to state its initial understanding, list aspects to consider, analyze factors one by one, and provide arguments for and against before concluding.
+- Benefits: Reduces instances of rushing to incorrect conclusions and provides more reliable and well-reasoned outputs.
 
 ```py
 delimiter = "####"
@@ -828,7 +829,6 @@ Practical Considerations
 - **Recommendation**:
   - Generally, not recommended for practical applications unless the error rate is extremely low (e.g., 0.0000001%).
   
-
 ```py
 response = openai.Moderation.create(
     input=final_response_to_customer
@@ -891,6 +891,5 @@ messages = [
 response = get_completion_from_messages(messages, max_tokens=1)
 print(response)
 ```
-
 
 ## Evaluation

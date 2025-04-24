@@ -25,7 +25,7 @@
 
 ## Open AI Enviroment Set-up
 
-You need and API key, store in .env file, then run
+You need an (OpenAI) API key, store in .env file, then run
 
 ```py
 import openai
